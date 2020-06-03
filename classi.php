@@ -29,13 +29,11 @@
 
     public function printMe() {
 
-      echo "Il tuo personaggio sarà " . $this->corporatura . "con capelli " . $this->capelli . "e occhi " . $this->occhi . ",sarà alto " . $this->altezza . "Il tuo personaggio sarà forte: " . $this->forza . "con intelletto: " . $this->intelletto . " e stamina: " . $this->stamina . "." ;
+      echo "<br>" . "<br>" . "Il tuo personaggio sarà " . $this->corporatura . " con capelli " . $this->capelli . " e occhi " . $this->occhi . ", sarà alto " . $this->altezza . "cm" . ". Il tuo personaggio sarà forte: " . $this->forza . " con intelletto: " . $this->intelletto . " e stamina: " . $this->stamina . "." ;
     }
-
-// echo "ci sono questi pesci:" . $this->pesce . "e queste carni:" . $this->carne . "e queste verdurcce:" . $verdure . "e questi legumi:" . $legumi . "e questi cereali:" . $cereali . "e questi frutti di mare:" . $fruttiDiMare . "e questi dolci:" . $dolci;
   }
 
-  $oggetto = new CreaAvatar("castani", "azzurri", "robusta", 1.80, 76, 35, 98);
+  $oggetto = new CreaAvatar("castani", "azzurri", "robusto", 180, 76, 35, 98);
   var_dump($oggetto);
 
   $oggetto-> printMe();
